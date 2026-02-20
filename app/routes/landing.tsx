@@ -7,8 +7,8 @@ export default function Landing() {
 
   return(
     <>
-    <div class = "border-5 p-5">
-      <h1 class="text-7xl">Life OS</h1>
+    <div className = "border-5 p-5">
+      <h1 className="text-7xl">Life OS</h1>
     </div>
   <div>
     <h2>
