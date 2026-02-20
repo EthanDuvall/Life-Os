@@ -1,4 +1,5 @@
 import {NavLink} from "react-router"
+import "../app.css"
 export default function Landing() {
 
 
@@ -6,8 +7,8 @@ export default function Landing() {
 
   return(
     <>
-    <div>
-      <h1>Life OS</h1>
+    <div class = "border-5 p-5">
+      <h1 class="text-7xl">Life OS</h1>
     </div>
   <div>
     <h2>
