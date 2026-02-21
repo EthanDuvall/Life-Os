@@ -1,18 +1,26 @@
 export default function Register() {
-  return;
-  <form>
+
+  function signUp (e){
+    e.preventDefault()
+    const formdata = new FormData(e.target)
+    console.log(formdata.get("regiEmail"))
+  }
+
+
+  return(
+  <form onSubmit ={(e)=>signUp(e)}>
     <label>
-      
       Email
-      <input placeholder="Email" type="email"></input>
+      <input name ='regiEmail' placeholder="Email" type="email"></input>
     </label>
     <label>
-      Password <input placeholder="Password" type="password"></input>
+      Password <input name ='regiPass' placeholder="Password" type="password"></input>
     </label>
     <label>
 
       Please verify your password
-      <input placeholder="Password" type="password"></input>
+      <input name ='regiPassV' placeholder="Password" type="password"></input>
     </label>
-  </form>;
+    <button type='submit'>Sign up!</button>
+  </form>)
 }
