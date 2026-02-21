@@ -1,4 +1,4 @@
-
+import {NavLink} from 'react-router'
 
 
 export default function Register() {
@@ -15,6 +15,8 @@ export default function Register() {
 
   return (
     <form onSubmit={(e) => signUp(e)}>
+      <h3>Sign up for Life OS</h3>
+      <p>Or if you already have an account <NavLink to ='/login'>log in</NavLink></p>
       <label>
         Email
         <input name="regiEmail" placeholder="Email" type="email"></input>
